@@ -44,7 +44,7 @@ async function renderMenu() {
     
     menuContainer.innerHTML = '';
     menuItems.forEach(item => {
-        const productCard = 
+        const productCard = `
             <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img src="${item.image}" alt="${item.name}" 
                      class="w-full h-48 object-cover"
@@ -61,7 +61,7 @@ async function renderMenu() {
                     </div>
                 </div>
             </div>
-        ;
+        `;
         menuContainer.innerHTML += productCard;
     });
 }
