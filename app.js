@@ -37,7 +37,7 @@ const menuItems = [
 // تابع نمایش منو
 function renderMenu() {
     const menuContainer = document.getElementById('menu-container');
-    
+
     if (!menuContainer) {
         console.log('منوی محصولات پیدا نشد');
         return;
@@ -45,7 +45,7 @@ function renderMenu() {
 
     let html = '';
     menuItems.forEach(item => {
-        html += 
+        html += `
             <div class="bg-white rounded-lg shadow-md p-6 mb-6">
                 <img src="${item.image}" alt="${item.name}" class="w-full h-48 object-cover rounded-lg mb-4">
                 <h3 class="text-xl font-bold text-gray-800">${item.name}</h3>
@@ -58,9 +58,9 @@ function renderMenu() {
                     </button>
                 </div>
             </div>
-        ;
+        `;
     });
-    
+
     menuContainer.innerHTML = html;
     console.log('منو با موفقیت نمایش داده شد');
 }
