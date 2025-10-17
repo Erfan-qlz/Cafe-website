@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ممد سوخاری - سفارش آنلاین غذا</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CDN برای استایل سریع -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- هدر -->
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-green-600">ممد سوخاری</h1>
+                <div class="flex gap-4">
+                    <a href="#menu" class="text-gray-700 hover:text-green-600">منو</a>
+                    <a href="#about" class="text-gray-700 hover:text-green-600">درباره ما</a>
+                    <a href="#contact" class="text-gray-700 hover:text-green-600">تماس</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- بخش هیرو -->
+    <section class="bg-green-600 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">سفارش آنلاین غذا</h2>
+            <p class="text-xl mb-8">با بهترین مواد اولیه و طعم بی‌نظیر</p>
+            <a href="#menu" class="bg-white text-green-600 px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-100">
+                مشاهده منو
+            </a>
+        </div>
+    </section>
+
+    <!-- بخش منو -->
+    <section id="menu" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">منوی رستوران</h2>
+            <div id="menu-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- محصولات اینجا با JavaScript پر می‌شوند -->
+            </div>
+        </div>
+    </section>
+
+    <!-- سبد خرید شناور -->
+    <div id="cart-sidebar" class="fixed left-4 top-1/2 transform -translate-y-1/2 bg-white shadow-2xl rounded-lg p-6 w-80 hidden">
+        <h3 class="text-xl font-bold mb-4 text-center">🛒 سبد خرید شما</h3>
+        <div id="cart-items" class="mb-4 max-h-64 overflow-y-auto">
+            <!-- آیتم‌های سبد خرید -->
+        </div>
+        <div class="border-t pt-4">
+            <div class="flex justify-between text-lg font-bold mb-4">
+                <span>مجموع:</span>
+                <span id="cart-total">0</span> تومان
+            </div>
+            <button onclick="checkout()" class="w-full bg-green-600 text-white py-3 rounded-lg font-bold hover:bg-green-700">
+                ثبت سفارش
+            </button>
+        </div>
+    </div>
+
+    <!-- دکمه سبد خرید -->
+    <button id="cart-toggle" class="fixed left-4 bottom-4 bg-green-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700">
+        🛒 <span id="cart-count" class="bg-red-500 text-white rounded-full px-2 py-1 text-sm">0</span>
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+<meta name="description" content="سفارش آنلاین غذا از رستوران [ممد سوخاری] - غذای باکیفیت با قیمت مناسب">
+<meta name="keywords" content="سفارش غذا, غذای آنلاین, رستوران, [بجنورد]">
+<title>رستوران [ممد سوخاری] - سفارش آنلاین غذا</title>
