@@ -71,3 +71,25 @@ body {
         right: 2.5vw;
     }
 }
+
+.navbar {
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-collapse {
+    flex-basis: auto;
+}
+.hero-slider {
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-item {
+    height: 500px;
+}
