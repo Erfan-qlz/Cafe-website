@@ -13,24 +13,45 @@ function checkout() {
 const menuItems = [
     {
         id: 1,
-        name: "اسپرسو",
-        description: "قهوه اسپرسو تازه",
+        name: "فیله سوخاری",
+        description: "توضیحات",
         price: 25000,
-        image: "https://via.placeholder.com/300x200/92400e/white?text=اسپرسو"
+        image: "images/file.jpg"
     },
     {
         id: 2,
-        name: "کاپوچینو", 
-        description: "کاپوچینو با فوم شیر",
+        name: "قارچ سوخاری", 
+        description: "توضیحات",
         price: 35000,
-        image: "https://via.placeholder.com/300x200/92400e/white?text=کاپوچینو"
+        image: "images/gharch.jpg"
     },
     {
         id: 3,
-        name: "چای مخصوص",
-        description: "چای سنتی با طعم خاص",
+        name: "بال سوخاری",
+        description: "نوضیحات",
         price: 15000,
-        image: "https://via.placeholder.com/300x200/065f46/white?text=چای"
+        image: "images/ball.jpg"
+    },
+    {
+        id: 4,
+        name: "ران سوخاری",
+        description: "نوضیحات",
+        price: 15000,
+        image: "images/ran.jpg"
+    },
+    {
+        id: 5,
+        name: "سالاد",
+        description: "نوضیحات",
+        price: 15000,
+        image: "images/salad.jpg"
+    },
+    {
+        id: 6,
+        name: "سیب زمینی",
+        description: "نوضیحات",
+        price: 15000,
+        image: "images/sibsokh.jpg"
     }
 ];
 
